@@ -13,11 +13,9 @@ eureka:
 logging:
    pattern:
      level: '%clr([trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}]){yellow} %5p'
-
 endpoints:
    health:
      sensitive: false
-
 spring:
   sleuth:
     log:
@@ -33,7 +31,6 @@ spring:
 eureka:
   instance:
      nonSecurePort: 80
-
 ---
 spring:
   profiles: local
